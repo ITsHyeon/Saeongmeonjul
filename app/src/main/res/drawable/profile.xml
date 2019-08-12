@@ -18,7 +18,7 @@
         android:right="5dp"
         android:top="5dp">
         <shape android:shape="oval">
-            <solid android:color="#ffffff"/>
+            <solid android:color="#efefef"/>
         </shape>
 
     </item>

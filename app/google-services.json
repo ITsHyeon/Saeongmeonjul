@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "788114999433",
+    "firebase_url": "https://saeongmeonjul.firebaseio.com",
+    "project_id": "saeongmeonjul",
+    "storage_bucket": "saeongmeonjul.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788114999433:android:fd1abfbc18d38299",
+        "android_client_info": {
+          "package_name": "com.example.saeongmeonjul"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "788114999433-3oe4vu9s0kof9trg7heubjdd5l02jh70.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.saeongmeonjul",
+            "certificate_hash": "3c6e72c9d587c28ea804ccac06790d6bd2688f30"
+          }
+        },
+        {
+          "client_id": "788114999433-68q6eug3i4o49855r98f8hlsde7vngnm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzjLoT2RFlAAUV4lwYA_QbWb4Z_Wz-o38"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "788114999433-68q6eug3i4o49855r98f8hlsde7vngnm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

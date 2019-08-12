@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PopupActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumsquareextrabold"
+        android:gravity="center"
+        android:text="동물등록증 등록"
+        android:textColor="#1b9ff7"
+        android:textSize="23dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumsquareextrabold"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="방식을 선택해주세요."
+        android:textColor="#fff"
+        android:textSize="23dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/gradient_button"
+        android:fontFamily="@font/nanumsquareextrabold"
+        android:text="바코드 인식"
+        android:textColor="#fff"
+        android:textSize="15dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/gradient_button"
+        android:fontFamily="@font/nanumsquareextrabold"
+        android:text="바코드 번호 입력"
+        android:textColor="#fff"
+        android:textSize="15dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/gradient_button"
+        android:fontFamily="@font/nanumsquareextrabold"
+        android:text="등록번호 입력"
+        android:textColor="#fff"
+        android:textSize="15dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/gradient_button"
+        android:fontFamily="@font/nanumsquareextrabold"
+        android:text="직접 입력"
+        android:textColor="#fff"
+        android:textSize="15dp" />
+</LinearLayout>

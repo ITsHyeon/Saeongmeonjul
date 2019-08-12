@@ -4,10 +4,24 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">#1ac7fb</item>
-        <item name="colorPrimaryDark">#ffffff</item>
+        <item name="colorPrimaryDark">#efefef</item>
         <item name="colorAccent">#1b96f5</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="nanumsquare">
+        <item name="android:fontFamily">@font/nanumsquareextrabold</item>
+    </style>
+
+    <style name="popupTheme" parent="Theme.AppCompat.DayNight.Dialog">
+
+
+        <item name="colorPrimary">#1ac7fb</item>
+        <item name="colorPrimaryDark">#ffffff</item>
+        <item name="colorAccent">#1b96f5</item>
+        <!-- 타이틀 바 제거-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
 </resources>
