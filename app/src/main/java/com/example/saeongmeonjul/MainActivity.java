@@ -1,6 +1,9 @@
 package com.example.saeongmeonjul;
 
+import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -37,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         mTab = findViewById(R.id.tabs);
         PagerAdapter mPagerAdapter = new PagerAdapter(getSupportFragmentManager());
         mContext = getApplicationContext();
+
 
        // Toolbar Setting
         mToolbar.setTitle("");
