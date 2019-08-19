@@ -1,13 +1,11 @@
-package com.example.saeongmeonjul;
+package com.example.saeongmeonjul.activity;
 
-import android.bluetooth.BluetoothAdapter;
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Window;
 
-import static app.akexorcist.bluetotohspp.library.BluetoothState.REQUEST_ENABLE_BT;
+import com.example.saeongmeonjul.R;
 
 public class SplashActivity extends AppCompatActivity {
 

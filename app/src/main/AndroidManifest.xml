@@ -16,15 +16,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AutoConnectActivity">
+        <activity android:name=".activity.AutoConnectActivity">
 
         </activity>
         <activity
-            android:name=".PopupActivity"
+            android:name=".activity.PopupActivity"
             android:screenOrientation="portrait"
             android:theme="@style/popupTheme" />
-        <activity android:name=".SignupActivity" />
-        <activity android:name=".SplashActivity">
+        <activity android:name=".activity.SignupActivity" />
+        <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,7 +32,7 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".activity.MainActivity" />
 
         <meta-data
             android:name="com.kakao.sdk.AppKey"
