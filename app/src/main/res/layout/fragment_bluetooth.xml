@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <Button
+        android:id="@+id/btnSendOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="ON"
+        android:textSize="17dp"
+        android:fontFamily="@font/nanumsquareextrabold"
+        android:textColor="#fff"
+        android:background="@drawable/gradient_button"
+        />
+    <Button
+        android:id="@+id/btnSendOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OFF"
+        android:textSize="17dp"
+        android:fontFamily="@font/nanumsquareextrabold"
+        android:textColor="#fff"
+        android:background="@drawable/gradient_button"
+        android:layout_below="@+id/btnSendOn"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONNECT"
+        android:textSize="17dp"
+        android:fontFamily="@font/nanumsquareextrabold"
+        android:textColor="#fff"
+        android:background="@drawable/gradient_button"
+        android:layout_above="@+id/btnSendOn"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        />
+<!--    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="블루투스"
+        android:textSize="20dp" />-->
+</RelativeLayout>

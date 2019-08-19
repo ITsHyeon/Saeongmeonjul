@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.example.saeongmeonjul.fragment.BluetoothFragment;
 import com.example.saeongmeonjul.fragment.FragmentInfo;
 import com.example.saeongmeonjul.fragment.InventoryManagmentFragment;
 import com.example.saeongmeonjul.fragment.PublicToiletFragment;
@@ -17,7 +18,7 @@ import java.util.List;
 public class PagerAdapter extends FragmentPagerAdapter {
 //    private final List<FragmentInfo> mFragmentList= new ArrayList<>();
 
-    private static int PAGE_NUMBER = 4;
+    private static int PAGE_NUMBER = 5;
 
     public PagerAdapter(FragmentManager fm) {
         super(fm);
@@ -51,6 +52,9 @@ public class PagerAdapter extends FragmentPagerAdapter {
             case 3:
                 InventoryManagmentFragment inventoryManagmentFragment = new InventoryManagmentFragment();
                 return inventoryManagmentFragment;
+            case 4:
+                BluetoothFragment bluetoothFragment = new BluetoothFragment();
+                return bluetoothFragment;
             default:
                 return null;
         }

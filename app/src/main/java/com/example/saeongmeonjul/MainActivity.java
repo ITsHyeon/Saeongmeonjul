@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
         mTab.addTab(mTab.newTab().setCustomView(createTabView(R.drawable.tab_trail, "산책로 추천")));
         mTab.addTab(mTab.newTab().setCustomView(createTabView(R.drawable.tab_registration_managment, "동물등록증 관리")));
         mTab.addTab(mTab.newTab().setCustomView(createTabView(R.drawable.tab_inventory_managment, "재고관리")));
+        mTab.addTab(mTab.newTab().setCustomView(createTabView(R.drawable.tab_trail, "블루투스")));
 //        mTab.setupWithViewPager(mViewPager);
 
         // ViewPager Setting
