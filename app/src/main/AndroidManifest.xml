@@ -5,9 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
-    <meta-data
-        android:name="com.kakao.sdk.AppKey"
-        android:value="008931af8ca9e06098e7a93eece86bd4" /> <!-- 블루투스 -->
+    <!-- 블루투스 -->
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
@@ -35,6 +33,10 @@
 
         </activity>
         <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="1ce893a2831bcdb137175d41b593a323" />
     </application>
 
 </manifest>

@@ -3,12 +3,16 @@ package com.example.saeongmeonjul;
 import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.content.pm.Signature;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Base64;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
@@ -19,6 +23,9 @@ import com.example.saeongmeonjul.fragment.InventoryManagmentFragment;
 import com.example.saeongmeonjul.fragment.PublicToiletFragment;
 import com.example.saeongmeonjul.fragment.RegistrationManagmentFragment;
 import com.example.saeongmeonjul.fragment.TrailFragment;
+
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,6 +41,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // 카카오 맵 해시키
+        try {
+            PackageInfo info = getPackageManager().getPackageInfo(getPackageName(), PackageManager.GET_SIGNATURES);
+            for (Signature signature : info.signatures) {
+                MessageDigest md;
+                md = MessageDigest.getInstance("SHA");
+                md.update(signature.toByteArray());
+                String key = new String(Base64.encode(md.digest(), 0));
+                Log.d("Hash key : ", key );
+            }
+        } catch (Exception e){
+            Log.e("name not found", e.toString());
+        }
         // init
         mToolbar = findViewById(R.id.toolbar);
         mViewPager = findViewById(R.id.viewpager);
